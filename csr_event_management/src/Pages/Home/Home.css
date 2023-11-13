@@ -1,0 +1,82 @@
+/********************Component-1********************** */
+* {
+	text-decoration: none;
+}
+body{
+	/* overflow: hidden; */
+}
+.bg-img {
+	position: relative;
+	background: url(../../assets/1-Home.jpg) no-repeat;
+	background-size: cover;
+	background-position: center;
+	filter: blur(8px);
+	-webkit-filter: blur(8px);
+	height: 90vh;
+	width: 100%;
+}
+.main-info {
+	overflow: hidden;
+	display: flex;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	font-family: "Playfair Display", sans-serif;
+}
+.main-info h1 {
+	color: #f8f5f5;
+	width: auto;
+	text-transform: uppercase;
+	font-size: 3.7rem;
+	font-family: serif;
+	text-shadow: 1px 1px black;
+}
+.typed-text {
+	font-size: 2rem;
+	color: rgb(26, 209, 233);
+	font-family: "Roboto Mono", sans-serif;
+}
+.btn-main-offer {
+	text-decoration: none;
+	text-transform: capitalize;
+	border-radius: 0;
+	padding: 20px;
+	color: #fff;
+	background: rgba(255, 255, 255, 0.45);
+	border-radius: 16px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(4.9px);
+	-webkit-backdrop-filter: blur(4.9px);
+	border: 1px solid rgba(255, 255, 255, 0.25);
+	border-radius: 20px;
+	margin: 2rem;
+	font-size: 1.5rem;
+	box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+		rgba(0, 0, 0, 0.22) 0px 15px 12px;
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.btn-main-offer:hover {
+	text-decoration: none;
+	color: black;
+	text-shadow: 4px 4px 4px rgb(250, 248, 248);
+	transition: 0.2s ease-in-out;
+}
+@media (max-width: 768px) {
+	.main-info h1 {
+		font-size: 1.7rem !important;
+	}
+	.typed-text {
+		font-size: 1.3rem;
+		text-shadow: 1px 1px black;
+	}
+	.btn-main-offer {
+		font-size: 1rem;
+		padding: 0.6rem 0.5rem 0.5rem 0.5rem;
+	}
+}

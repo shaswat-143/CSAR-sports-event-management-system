@@ -1,0 +1,18 @@
+input {
+	width: 100%;
+	height: 40px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	padding: 0 10px;
+	margin-bottom: 10px;
+	font-size: 16px;
+	font-family: "Roboto", sans-serif;
+	outline: none;
+	transition: all 0.3s ease-in-out;
+}
+.map {
+	height: 400px;
+	margin-top: 20px;
+	position: relative;
+	left: 900px;
+}
