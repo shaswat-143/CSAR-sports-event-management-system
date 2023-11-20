@@ -1,4 +1,4 @@
-package Backend.springbootbackend.model;
+package com.example.databasecrud.model;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -11,7 +11,7 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name="students")
+@Table(name="data")
 public class Student {
 
     @Id

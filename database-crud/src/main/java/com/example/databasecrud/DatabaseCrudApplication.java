@@ -1,17 +1,16 @@
-package Backend.springbootbackend;
+package com.example.databasecrud;
 
-import Backend.springbootbackend.model.Student;
-import Backend.springbootbackend.repository.StudentRepository;
+import com.example.databasecrud.repository.StudentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringbootBackendApplication implements CommandLineRunner {
+public class DatabaseCrudApplication implements CommandLineRunner {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringbootBackendApplication.class, args);
+		SpringApplication.run(DatabaseCrudApplication.class, args);
 	}
 
 	@Autowired

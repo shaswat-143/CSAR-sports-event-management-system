@@ -1,8 +1,8 @@
-package Backend.springbootbackend.repository;
+package com.example.databasecrud.repository;
 
-import Backend.springbootbackend.model.Student;
+import com.example.databasecrud.model.Student;
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Repository;
+
 public interface StudentRepository extends JpaRepository<Student, Long> {
     //all crud database methods
 }

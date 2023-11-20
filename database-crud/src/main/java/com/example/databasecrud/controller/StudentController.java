@@ -1,8 +1,8 @@
-package Backend.springbootbackend.controller;
+package com.example.databasecrud.controller;
 
-import Backend.springbootbackend.exception.ResourceNotFoundException;
-import Backend.springbootbackend.model.Student;
-import Backend.springbootbackend.repository.StudentRepository;
+import com.example.databasecrud.exception.ResourceNotFoundException;
+import com.example.databasecrud.model.Student;
+import com.example.databasecrud.repository.StudentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -63,3 +63,4 @@ public class StudentController {
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 }
+
