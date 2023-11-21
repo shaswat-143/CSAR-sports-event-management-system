@@ -25,6 +25,7 @@ import React from "react";
 import Logo from "../../assets/logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 import "./CustomNavbar.css";
 
 const Navbar = () => {
@@ -79,11 +80,29 @@ const Navbar = () => {
                 Home <span className="sr-only"></span>
               </a>
             </li>
-            <li className="nav-item">
-              <a classNames="nav-link" href="/about">
-                about
+            <li className="nav-item dropdown">
+              <a
+                className="nav-link dropdown-toggle"
+                href="#"
+                id="loginDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                style={{ fontSize: "14px" }}
+                aria-expanded="false"
+              >
+                Login
               </a>
+              <div className="dropdown-menu" aria-labelledby="loginDropdown">
+                <button className="dropdown-item" >
+                  <Link to="/login" class="text-decoration-none">User</Link>
+                </button>
+                <button className="dropdown-item" >
+                  <Link to="/admin/login" class="text-decoration-none">Admin</Link>
+                </button>
+              </div>
             </li>
+
             <li className="nav-item">
               <a classNames="nav-link" href="/event">
                 Event
@@ -99,7 +118,7 @@ const Navbar = () => {
                 contact
               </a>
             </li>
-         
+
           </ul>
         </div>
       </div>

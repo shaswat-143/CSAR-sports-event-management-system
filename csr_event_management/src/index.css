@@ -11,32 +11,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-.sign {
-  margin: auto;
-  width: 60%;
-  border: 3px solid #73AD21;
-  padding: 10px;
-  text-align: center;
-  
-}
-.sign1 {
-  margin: auto;
-  width: 80%;
-  border: 3px solid #73AD21;
-  padding: 10px;
-  text-align: center;
-  
-}
-
-.signbar {
-  margin: auto;
-  width: 40%;
-  border: 3px solid #73AD21;
-  padding: 10px;
-  text-align: center;
-}
 .App {
   /* flex: 1; */
   background-color: #0a183d;
 }
-

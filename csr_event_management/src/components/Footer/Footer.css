@@ -1,15 +1,13 @@
 *{
-  /* overflow: hidden; */
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
-    /* overflow-x: hidden; */
+
 }
 .footer{
-    height: 50vh;
+    height: 20vh;
     border: 1px solid black;
     background-color: rgb(41, 36, 36);
-
 }
 /* .footer .copy{
     text-align: center;

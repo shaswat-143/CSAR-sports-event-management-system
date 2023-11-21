@@ -2,9 +2,6 @@
 * {
 	text-decoration: none;
 }
-body{
-	/* overflow: hidden; */
-}
 .bg-img {
 	position: relative;
 	background: url(../../assets/1-Home.jpg) no-repeat;
@@ -13,10 +10,8 @@ body{
 	filter: blur(8px);
 	-webkit-filter: blur(8px);
 	height: 90vh;
-	width: 100%;
 }
 .main-info {
-	overflow: hidden;
 	display: flex;
 	position: absolute;
 	top: 0;
@@ -31,7 +26,6 @@ body{
 }
 .main-info h1 {
 	color: #f8f5f5;
-	width: auto;
 	text-transform: uppercase;
 	font-size: 3.7rem;
 	font-family: serif;

@@ -1,17 +1,23 @@
+
 import "./Register.css";
 import styled from "styled-components";
 import Button from "./Button";
 import Icon from "./Icon";
-import React, { useState } from "react";
+import React,{useState} from "react";
 import Input from "./Input";
 import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
+
 
 function Register() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [name, setName] = useState("");
+  const [name,setName] = useState("");
 
-  function signUp() {}
+
+  function signUp() {
+   
+
+  }
 
   const FacebookBackground =
     "linear-gradient(to right, #0546A0 0%, #0546A0 40%, #663FB6 100%)";
@@ -21,20 +27,20 @@ function Register() {
     "linear-gradient(to right, #56C1E1 0%, #35A9CE 50%)";
 
   return (
+
+
+
+
     <div className="register-form">
+
+
       <MainContainer>
         <WelcomeText>Welcome</WelcomeText>
         <InputContainer>
-          <Input
-            onChange={(e) => {
-              setName(e.target.value);
-            }}
-            value={name}
-            type="text"
-            placeholder="Name"
-          />
+          <Input onChange={(e)=>{setName(e.target.value)}} value={name} type="text"  placeholder="Name" />
           <Input type="text" placeholder="Email" />
           <Input type="password" placeholder="Password" />
+
         </InputContainer>
         <ButtonContainer onClick={signUp}>
           <Button content="Sign Up" />
@@ -63,7 +69,7 @@ const MainContainer = styled.div`
   align-items: center;
   flex-direction: column;
   height: 60vh;
-  margin-top: 30px;
+  margin-top:30px;
   margin-bottom: 30px;
   width: 30vw;
   background: rgba(255, 255, 255, 0.15);

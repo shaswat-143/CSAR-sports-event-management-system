@@ -1,17 +1,22 @@
-import "./App.css";
+import { useLocation } from "react-router";
+
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar/CustomNavbar";
 import Home from "./Pages/Home/Home";
 import About from "./Pages/About/About";
 import Event from "./Pages/Event/Event";
 import Contact from "./Pages/Contact/Contact";
-import Login from "./Pages/Login/Login";
 import Register from "./Pages/Login/Register";
 import Footer from "./components/Footer/Footer";
 import ParEvent from "./Pages/ParEvent/ParEvent";
-import Signin from "./Pages/Login/Signin";
-
+import AdHome from "./Admin/AdHome";
+import AdminLogin from "./Admin/Pages/AdminLogin";
+import List from "./components/ListStudentComponent";
+import head from "./components/HeaderComponent";
+import foot from "./components/FooterComponent";
+import Add from "./components/AddStudentComponent";
 function App() {
+
   return (
     <Router>
       <Navbar />
@@ -20,10 +25,12 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/event" element={<Event />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/register" element={<Signin />} />
-        <Route path='/login' component={<Login />} />
-        <Route path="/partEvent" component={<ParEvent />} />
-
+        <Route path="/register" element={<Register />} />
+        <Route path="/partEvent" element={<Add />} />
+        <Route path="/partEventlist" element={<List />} />
+        <Route path="/admin/home" element={<AdHome />} />
+        <Route path="/admin/login" element={<AdminLogin />} />
+        
       </Routes>
       <Footer />
     </Router>
