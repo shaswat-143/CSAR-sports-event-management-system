@@ -1,22 +1,38 @@
-
 import "./Register.css";
 import styled from "styled-components";
 import Button from "./Button";
 import Icon from "./Icon";
-import React,{useState} from "react";
+import React, { useState } from "react";
 import Input from "./Input";
 import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
-
 
 function Register() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [name,setName] = useState("");
+  const [name, setName] = useState("");
 
+  async function signUp() {
+    try {
+      const response = await fetch("http://localhost:8079/api/v1/user/save", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name,
+          email,
+          password,
+        }),
+      });
 
-  function signUp() {
-   
-
+      if (response.ok) {
+        console.log("User registered successfully");
+      } else {
+        console.error("Failed to register user");
+      }
+    } catch (error) {
+      console.error("Error during registration:", error);
+    }
   }
 
   const FacebookBackground =
@@ -27,20 +43,13 @@ function Register() {
     "linear-gradient(to right, #56C1E1 0%, #35A9CE 50%)";
 
   return (
-
-
-
-
     <div className="register-form">
-
-
       <MainContainer>
         <WelcomeText>Welcome</WelcomeText>
         <InputContainer>
-          <Input onChange={(e)=>{setName(e.target.value)}} value={name} type="text"  placeholder="Name" />
-          <Input type="text" placeholder="Email" />
-          <Input type="password" placeholder="Password" />
-
+          <Input onChange={(e) => setName(e.target.value)} value={name} type="text" placeholder="Name" />
+          <Input onChange={(e) => setEmail(e.target.value)} value={email} type="text" placeholder="Email" />
+          <Input onChange={(e) => setPassword(e.target.value)} value={password} type="password" placeholder="Password" />
         </InputContainer>
         <ButtonContainer onClick={signUp}>
           <Button content="Sign Up" />

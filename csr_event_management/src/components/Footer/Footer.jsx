@@ -10,12 +10,12 @@ function Footer() {
 	return (
 		<div className="footer">
 			<div className="col">
-				{/* <div className="head-line">
+				<div className="head-line">
 					<h1>Get in touch</h1>
 					<p className="text">
 						Lorem ipsum dolor sit amet consectetur adipisicing elit.
 					</p>
-				</div> */}
+				</div>
 				<div className="social-media">
 					<Link className="icon" to="#link">
 						<FaFacebook />
@@ -31,7 +31,7 @@ function Footer() {
 					</Link>
 				</div>
 			</div>
-			{/* <div className="quick-link">
+			<div className="quick-link">
 				<div className="col">
 					<h1>Quick Link</h1>
 					<ul>
@@ -62,7 +62,7 @@ function Footer() {
 			
 			
 			
-			</div> */}
+			</div>
 			{/* <p className="copy">© 2021 - 2022</p> */}
 		</div>
 	);

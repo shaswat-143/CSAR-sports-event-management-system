@@ -95,7 +95,7 @@ const Navbar = () => {
               </a>
               <div className="dropdown-menu" aria-labelledby="loginDropdown">
                 <button className="dropdown-item" >
-                  <Link to="/login" class="text-decoration-none">User</Link>
+                  <Link to="/user/login" class="text-decoration-none">User</Link>
                 </button>
                 <button className="dropdown-item" >
                   <Link to="/admin/login" class="text-decoration-none">Admin</Link>
